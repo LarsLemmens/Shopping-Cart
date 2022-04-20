@@ -47,6 +47,10 @@ export default new Vuex.Store({
       state.user.email = payload.email;
       state.user.idToken = payload.idToken;
     },
+    setUrls(state) {
+      state.endpoints.products = process.env.VUE_APP_PRODUCTS_URL;
+      console.log(process.env);
+    }
   },
   actions: { //asynchronous
     async getProducts(state) {
