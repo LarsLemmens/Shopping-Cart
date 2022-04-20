@@ -9927,3 +9927,8 @@ img.mfp-img{
 .formform div{
     margin-top: 1%;
 }
+
+#imgLanding{
+    background-image: url('C:/Users/Lars/Documents/GitHub/Shopping-Cart/src/assets/img/ak-mod-workstation-featured.jpg');
+    opacity: 0.8;
+}

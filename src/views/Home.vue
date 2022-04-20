@@ -3,16 +3,8 @@ console.log("Hello from Vue!");
 </script>
 
 <template>
-  <div>
-   <div class="container">
-    <div class="container">
-      <div class="row">
-        <Item v-for="product in products" :key="product.id" :item="product" />
-      </div>
-    </div>
-  </div>
-  
-  <section id="about" class="bg-primary">
+  <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57">
+    <section id="about" class="bg-primary">
         <div class="container">
             <div class="row">
                 <div class="col offset-lg-8 text-center mx-auto">
@@ -23,8 +15,7 @@ console.log("Hello from Vue!");
             </div>
         </div>
     </section>
-    
-<section id="services">
+    <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -67,11 +58,10 @@ console.log("Hello from Vue!");
             </div>
         </div>
     </section>
-
     <section id="portfolio" class="p-0">
         <div class="container-fluid p-0">
             <div class="row g-0 popup-gallery">
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/desk4.png"><img class="img-fluid" src="../assets/img/desk4.png">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/desk4.png"><img class="img-fluid" src="assets/img/desk4.png">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Hanging Desk</span></div>
@@ -79,7 +69,7 @@ console.log("Hello from Vue!");
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/desk2.png"><img class="img-fluid" src="../assets/img/desk2.png">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/desk2.png"><img class="img-fluid" src="assets/img/desk2.png">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Desk type red</span></div>
@@ -87,15 +77,15 @@ console.log("Hello from Vue!");
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/desk3.png"><img class="img-fluid" src="../assets/img/desk3.png">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/desk3.png"><img class="img-fluid" src="assets/img/desk3.png">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Desk type green</span></div>
-                                <div class="project-name"><span>Let the green relax your mind.</span></div>
+                                <div class="project-name"><span>Let de green relax your mind.</span></div>
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/desk1.png"><img class="img-fluid" src="../assets/img/desk1.png">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/desk1.png"><img class="img-fluid" src="assets/img/desk1.png">
                         <div class="portfolio-box-caption" style="/*background-image: white;*/">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Industrial red</span></div>
@@ -103,7 +93,7 @@ console.log("Hello from Vue!");
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/desk5.png"><img class="img-fluid" src="../assets/img/desk5.png">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/desk5.png"><img class="img-fluid" src="assets/img/desk5.png">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Desk</span></div>
@@ -111,7 +101,7 @@ console.log("Hello from Vue!");
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/desk6.png"><img class="img-fluid" src="../assets/img/desk6.png">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/desk6.png"><img class="img-fluid" src="assets/img/desk6.png">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Calm</span></div>
@@ -122,9 +112,12 @@ console.log("Hello from Vue!");
             </div>
         </div>
     </section>
-
-
-        <section id="contact">
+    <section class="text-white bg-dark">
+        <div class="container text-center">
+            <h2 class="mb-4">Our catalog&nbsp;</h2><a class="btn btn-light btn-xl sr-button" role="button" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true" href="#">Download Now!</a>
+        </div>
+    </section>
+    <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 text-center mx-auto">
@@ -162,25 +155,10 @@ console.log("Hello from Vue!");
             </div>
         </div>
     </section>
-  </div>
+</body>
 </template>
-    
-<script>
-// @ is an alias to /src
-import Item from "@/Item.vue";
-export default {
-  name: "Home",
-  computed: {
-    products() {
-      return this.$store.state.products;
-    },
-  },
-  components: {
-    Item,
-  },
-};
-</script>
-<style>
+
+<style> 
 @import '../assets/css/bootstrap.min.css';
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800';
