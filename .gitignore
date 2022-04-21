@@ -2,6 +2,8 @@
 node_modules
 ibmregistry.json
 
+shopping-cart-test
+
 # local env files
 .env
 .env.local
