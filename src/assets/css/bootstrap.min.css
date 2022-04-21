@@ -5853,14 +5853,13 @@ textarea.form-control-lg {
 }
 
 .modal-backdrop {
-    position: fixed;
+    position: inherit;
     top: 0;
     left: 0;
-    z-index: 1050;
+    z-index: 1040;
     width: 100vw;
     height: 100vh;
-    background-color: #000
-}
+  }
 
 .modal-backdrop.fade {
     opacity: 0
@@ -12442,4 +12441,6 @@ header:not(#Home) {
 
 #ShoppingCart {
     width: 150px;
+    position: inherit;
 }
+
