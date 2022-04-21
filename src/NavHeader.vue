@@ -103,7 +103,7 @@
           We build a combination of desk and computer to improve the esthetics
           of your working environment.
         </p>
-        <a class="btn btn-primary btn-xl" role="button" href="#services"
+        <a class="btn btn-primary btn-xl" id="hoverButton" role="button" href="#services"
           >Find Out More</a
         >
       </div>
