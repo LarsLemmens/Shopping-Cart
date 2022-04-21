@@ -20,9 +20,9 @@ export default new Vuex.Store({
       partner: false
     },
     endpoints: {
-      login: "http://localhost:3000/login",
-      partnercheck: "http://localhost:8000/check",
-      products: "http://localhost:8000/products",
+      login: process.env.VUE_APP_AUTH_URL,
+      partnercheck: process.env.VUE_APP_URL + "/check",
+      products: process.env.VUE_APP_URL + "/products",
     },
   },
   getters: {
