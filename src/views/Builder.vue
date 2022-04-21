@@ -52,70 +52,13 @@
   </body>
 </template>
 
-<!--
-          <div class="col-sm-6 col-lg-4 item">
-            <img class="img-fluid" src="assets/img/desk.jpg" />
-            <h3 class="name">Hanging desk</h3>
-            <p class="description">A desk that has to be mounted to the wall</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 item">
-            <img class="img-fluid" src="assets/img/building.jpg" />
-            <h3 class="name">Red desk</h3>
-            <p class="description">
-              A desk that has a color scheme that exists out of black and red
-            </p>
-          </div>
-          <div class="col-sm-6 col-lg-4 item">
-            <img class="img-fluid" src="assets/img/building.jpg" />
-            <h3 class="name">Green desk</h3>
-            <p class="description">
-              <br />A desk that has a color scheme that exists out of black and
-              green<br />
-            </p>
-          </div>
-          <div class="col-sm-6 col-lg-4 item">
-            <img class="img-fluid" src="assets/img/building.jpg" />
-            <h3 class="name">Zen desk</h3>
-            <p class="description">
-              <br />A desk that has almost no lights, this one is very clean and
-              steady<br /><br />
-            </p>
-          </div>
-          <div class="col-sm-6 col-lg-4 item">
-            <img class="img-fluid" src="assets/img/building.jpg" />
-            <h3 class="name">Industrial red desk</h3>
-            <p class="description">
-              <br />A desk that has a color scheme that exists out of black and
-              industrial red<br />
-            </p>
-          </div>
--->
-
-<!--    
-<script>
-// @ is an alias to /src
-import Item from "@/Item.vue";
-export default {
-  name: "Home",
-  computed: {
-    products() {
-      return this.$store.state.products;
-    },
-  },
-  components: {
-    Item,
-  },
-};
-</script>
--->
 <script>
 import NavHeader from "@/NavHeader.vue";
 import Item from "@/Item.vue";
 export default {
-  name: "Home",
   computed: {
     products() {
-      return this.$state.products;
+      return this.$store.state.products;
     },
   },
   components: {
