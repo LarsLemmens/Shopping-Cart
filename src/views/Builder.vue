@@ -28,18 +28,31 @@
       </div>
     </section>
 
-  <div>
-    <h1>Builder</h1>
+    <div>
+      <h1>Builder</h1>
 
-    <div class="projects-clean">
-      <div class="container">
-        <div class="intro">
-          <h2 class="text-center">Desks</h2>
-          <p class="text-center">
-            This is an overview of all the pre-build desks.
-          </p>
+      <div class="projects-clean">
+        <div class="container">
+          <div class="intro">
+            <h2 class="text-center">Desks</h2>
+            <p class="text-center">
+              This is an overview of all the pre-build desks.
+            </p>
+          </div>
+          <div class="row projects">
+            <Item
+              v-for="product in products"
+              :key="product.id"
+              :item="product"
+            />
+          </div>
         </div>
-        <div class="row projects">
+      </div>
+    </div>
+  </body>
+</template>
+
+<!--
           <div class="col-sm-6 col-lg-4 item">
             <img class="img-fluid" src="assets/img/desk.jpg" />
             <h3 class="name">Hanging desk</h3>
@@ -76,19 +89,38 @@
               industrial red<br />
             </p>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
+-->
 
-  </body>
-</template>
-
+<!--    
+<script>
+// @ is an alias to /src
+import Item from "@/Item.vue";
+export default {
+  name: "Home",
+  computed: {
+    products() {
+      return this.$store.state.products;
+    },
+  },
+  components: {
+    Item,
+  },
+};
+</script>
+-->
 <script>
 import NavHeader from "@/NavHeader.vue";
+import Item from "@/Item.vue";
 export default {
+  name: "Home",
+  computed: {
+    products() {
+      return this.$state.products;
+    },
+  },
   components: {
     NavHeader,
+    Item,
   },
   data() {
     return {

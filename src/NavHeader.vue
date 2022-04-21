@@ -11,7 +11,7 @@
       >
         <div class="container">
           <h1>
-            <a href="index.html">
+            <a href="Home">
               <img
                 src="./assets/img/vecteezy_dd-d-and-d-abstract-initial-monogram-letter-alphabet-logo_6150819.png"
                 style="
@@ -44,7 +44,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="desks.html" style="color: white"
+                <a class="nav-link" href="Builder" style="color: white"
                   >Desks</a
                 >
               </li>
