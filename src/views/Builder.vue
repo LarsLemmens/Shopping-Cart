@@ -6,89 +6,29 @@
     data-bs-offset="57"
   >
     <NavHeader :page="page" :redirect="redirect" />
-    <section id="about" class="bg-primary">
+    <section id="about" class="bg-primary" style="padding: 1rem">
       <div class="container">
         <div class="row">
           <div class="col offset-lg-8 text-center mx-auto">
             <h2 class="text-white section-heading">Desks</h2>
             <hr class="light my-4" />
             <p class="text-faded mb-4">
-              This is an overview of all the pre-build desks.&nbsp;
+              Here is an overview of all the pre-build desks we currently have
+              available.&nbsp;
             </p>
-            <a
-              class="btn btn-light btn-xl"
-              role="button"
-              href="#services"
-              data-toggle="modal"
-              data-target="#exampleModalCenter"
-              >See more!</a
-            >
           </div>
         </div>
       </div>
     </section>
 
     <div>
-      <h1>Builder</h1>
-
       <div class="projects-clean">
-        <div class="container">
-          <div class="intro">
-            <h2 class="text-center">Desks</h2>
-            <p class="text-center">
-              Here is an overview of all the pre-build desks.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Close
-            </button>
-          </div>
-
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModalCenter"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true"
-            v-if="isAuthenticated"
-          >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">
-                    Name of desk
-                  </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  These are the specifications of this desk with name ...
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="row projects">
           <Item v-for="product in products" :key="product.id" :item="product" />
         </div>
+        <a class="btn btn-primary btn-xl" role="button" href="#services"
+          >See more!</a
+        >
       </div>
     </div>
   </body>
