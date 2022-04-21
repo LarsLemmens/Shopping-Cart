@@ -1,5 +1,59 @@
 <template>
-    <div>
-        <h1>Builder</h1>
-    </div>
+  <body
+    id="page-top"
+    data-bs-spy="scroll"
+    data-bs-target="#mainNav"
+    data-bs-offset="57"
+  >
+    <NavHeader :page="page" />
+    <h1>Builder</h1>
+    <section id="about" class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col offset-lg-8 text-center mx-auto">
+            <h2 class="text-white section-heading">
+              A messy desk is a messy head!
+            </h2>
+            <hr class="light my-4" />
+            <p class="text-faded mb-4">
+              This is what we improve to your setup. Built-in-desk computers are
+              what will make you more productive.<br />Companies like Mircrosoft
+              and Acer already showed their interesse.&nbsp;
+            </p>
+            <a class="btn btn-light btn-xl" role="button" href="#services"
+              >Get Started!</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </template>
+
+<script>
+import NavHeader from "@/NavHeader.vue";
+export default {
+  components: {
+    NavHeader,
+  },
+  data() {
+    return {
+      page: "Builder",
+    };
+  },
+};
+</script>
+
+
+<style>
+@import "../assets/css/bootstrap.min.css";
+
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800";
+@import "https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic";
+@import "https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css";
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js";
+@import "https://www.google.com/recaptcha/api.js";
+</style>
