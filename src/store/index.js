@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
+import createPersistedState from "vuex-persistedstate";
+
 
 Vue.use(Vuex)
 
@@ -8,6 +10,7 @@ const url = process.env.VUE_APP_URL + "/products"; //"http://springboot-products
 const headers = { Accept: "application/json" };
 
 export default new Vuex.Store({
+  plugins: [createPersistedState()],
   state: {
     products: [],
     inCart: [],
