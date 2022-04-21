@@ -5567,7 +5567,6 @@ textarea.form-control-lg {
 .list-group-item-primary {
     color: #903926;
     background-color: #fcdfd9
-
 }
 
 .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
@@ -5862,7 +5861,7 @@ textarea.form-control-lg {
     z-index: 1040;
     width: 100vw;
     height: 100vh;
-  }
+}
 
 .modal-backdrop.fade {
     opacity: 0
@@ -11986,7 +11985,8 @@ hr {
     margin-left: auto !important;
     margin-right: auto !important;
     border-style: solid;
-    opacity: 1
+    opacity: 1;
+    color: white;
 }
 
 .mfp-bg {
@@ -12447,7 +12447,7 @@ header:not(#Home) {
     position: inherit;
 }
 
-#hoverButton:hover{
+#hoverButton:hover {
     background-color: white !important;
     color: black;
 }
