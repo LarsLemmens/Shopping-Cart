@@ -9934,6 +9934,6 @@ img.mfp-img{
 }
 
 #imgLanding{
-    background-image: url('C:/Users/Lars/Documents/GitHub/Shopping-Cart/src/assets/img/ak-mod-workstation-featured.jpg');
+    background-image: url('../img/ak-mod-workstation-featured.jpg');
     opacity: 0.8;
 }

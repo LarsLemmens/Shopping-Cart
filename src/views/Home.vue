@@ -1,7 +1,3 @@
-<script setup>
-console.log("Hello from Vue!");      
-</script>
-
 <template>
   <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57">
     <section id="about" class="bg-primary">
