@@ -3025,28 +3025,30 @@ textarea.form-control-lg {
     background-color: #f05f40;
     border-color: #f05f40;
     width: 30%;
-    margin-left: 35%;
+    margin-left: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
+    margin-right: 5%;
 }
 
 .btn-primary:hover {
     color: #000;
-    background-color: #f2775d;
-    border-color: #f26f53
+    background-color: goldenrod;
+    border-color: goldenrod;
 }
+
 
 .btn-check:focus+.btn-primary, .btn-primary:focus {
     color: #000;
-    background-color: #f2775d;
-    border-color: #f26f53;
+    background-color: goldenrod;
+    border-color: goldenrod;
     box-shadow: 0 0 0 .25rem rgba(204, 81, 54, .5)
 }
 
 .btn-check:checked+.btn-primary, .btn-check:active+.btn-primary, .btn-primary:active, .btn-primary.active, .show>.btn-primary.dropdown-toggle {
     color: #000;
-    background-color: #f37f66;
-    border-color: #f26f53
+    background-color: goldenrod;
+    border-color: goldenrod;
 }
 
 .btn-check:checked+.btn-primary:focus, .btn-check:active+.btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show>.btn-primary.dropdown-toggle:focus {
@@ -3055,8 +3057,8 @@ textarea.form-control-lg {
 
 .btn-primary:disabled, .btn-primary.disabled {
     color: #000;
-    background-color: #f05f40;
-    border-color: #f05f40
+    background-color: goldenrod;
+    border-color: goldenrod;
 }
 
 .btn-secondary {
@@ -5565,6 +5567,7 @@ textarea.form-control-lg {
 .list-group-item-primary {
     color: #903926;
     background-color: #fcdfd9
+
 }
 
 .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
@@ -12443,3 +12446,17 @@ header:not(#Home) {
     position: inherit;
 }
 
+#hoverButton:hover{
+    background-color: white !important;
+    color: black;
+}
+
+#ShoppingCart:hover {
+    background-color: white !important;
+    color: black;
+}
+
+#hoverButton :hover {
+    background-color: goldenrod !important;
+    color: white;
+}
