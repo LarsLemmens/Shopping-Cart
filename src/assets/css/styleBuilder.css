@@ -9934,10 +9934,14 @@ img.mfp-img{
 }
 
 #imgLanding{
-    background-image: url('../img/ak-mod-workstation-featured.jpg');
     opacity: 0.8;
 }
 
 #ShoppingCart{
-    width: 150px;
+    width: 50px;
+    background-color: red;
+}
+
+.ShoppingCart{
+    width: 60px;
 }

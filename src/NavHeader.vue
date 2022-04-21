@@ -11,12 +11,42 @@
                             <li class="nav-item"><a class="nav-link" href="#services" style="color: white;">Services</a></li>
                             <li class="nav-item"><a class="nav-link" href="desks.html" style="color: white;">Desks</a></li>
                             <li class="nav-item"></li>
-                            <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="components.html" style="color: white;">Components&nbsp;</a>
-                                <div class="dropdown-menu"><a class="dropdown-item" href="components.html/#hardware">Hardware</a><a class="dropdown-item" href="components.html/#software">Software</a><a class="dropdown-item" href="components.html/#desks">Desk parts</a></div>
+                                  <ul class="nav navbar-nav">
+                            <router-link
+                            to="/"
+                            tag="li"
+                            v-if="!isAuthenticated"
+                            class="nav-item"
+                            active-class="active"
+                            >
+                            <a @click="onLoginClicked" class="nav-link">Login</a>
+                            </router-link>
+                            <li v-if="isAuthenticated" class="li-pointer nav-item">
+                            <div class="dropdown">
+                                <button
+                                class="btn btn-secondary dropdown-toggle"
+                                type="button"
+                                id="dropdownMenuButton"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >
+                                {{ getUserName() }}
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Account Settings</a>
+                                <a @click="onLogoutClicked" class="dropdown-item"
+                                    >Logout {{ userEmail }}</a
+                                >
+                                </div>
+                            </div>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="Builder.vue" style="color: white;">Contact</a></li>
-                        </ul><a href="index.html#contact" style="color: darkgoldenrod;">Contact</a><a href="#"></a>
-                    </div>
+                            <li>
+                            <ShoppingCart />
+                            </li>
+                        </ul>
+                        </ul>
+                    </div> 
                 </div>
             </nav>
             <div class="row" style="margin-top: 10%;">
@@ -31,3 +61,31 @@
         </div>
     </header> 
  </template>
+
+
+ <script>
+import ShoppingCart from "./ShoppingCart.vue";
+export default {
+  components: { ShoppingCart },
+  name: "NavHeader",
+  computed: {
+    userEmail() {
+      return this.isLoggedIn ? this.currentUser.email : "";
+    },
+    isAuthenticated() {
+      return this.$store.state.user.isAuthenticated;
+    },
+  },
+  methods: {
+    onLoginClicked() {
+      window.location = this.$store.state.endpoints.login;
+    },
+    onLogoutClicked() {
+      this.$store.commit("logout");
+    },
+    getUserName() {
+      return this.$store.state.user.name;
+    },
+  },
+};
+</script>
