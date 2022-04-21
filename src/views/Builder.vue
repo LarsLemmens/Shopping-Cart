@@ -5,23 +5,23 @@
     data-bs-target="#mainNav"
     data-bs-offset="57"
   >
-    <NavHeader :page="page" />
-    <h1>Builder</h1>
+    <NavHeader :page="page" :redirect="redirect" />
     <section id="about" class="bg-primary">
       <div class="container">
         <div class="row">
           <div class="col offset-lg-8 text-center mx-auto">
-            <h2 class="text-white section-heading">
-              A messy desk is a messy head!
-            </h2>
+            <h2 class="text-white section-heading">Desks</h2>
             <hr class="light my-4" />
             <p class="text-faded mb-4">
-              This is what we improve to your setup. Built-in-desk computers are
-              what will make you more productive.<br />Companies like Mircrosoft
-              and Acer already showed their interesse.&nbsp;
+              This is an overview of all the pre-build desks.&nbsp;
             </p>
-            <a class="btn btn-light btn-xl" role="button" href="#services"
-              >Get Started!</a
+            <a
+              class="btn btn-light btn-xl"
+              role="button"
+              href="#services"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+              >See more!</a
             >
           </div>
         </div>
@@ -39,13 +39,55 @@
               Here is an overview of all the pre-build desks.
             </p>
           </div>
-          <div class="row projects">
-            <Item
-              v-for="product in products"
-              :key="product.id"
-              :item="product"
-            />
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Close
+            </button>
           </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+            v-if="isAuthenticated"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    Name of desk
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  These are the specifications of this desk with name ...
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row projects">
+          <Item v-for="product in products" :key="product.id" :item="product" />
         </div>
       </div>
     </div>
@@ -60,6 +102,9 @@ export default {
     products() {
       return this.$store.state.products;
     },
+    isAuthenticated() {
+      return this.$store.state.user.isAuthenticated;
+    },
   },
   components: {
     NavHeader,
@@ -68,6 +113,7 @@ export default {
   data() {
     return {
       page: "Builder",
+      redirect: "Home",
     };
   },
 };

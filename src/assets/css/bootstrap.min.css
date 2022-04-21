@@ -11969,7 +11969,8 @@ header.masthead p {
 .btn-primary {
     background-color: goldenrod;
     border-color: #f05f40;
-    color: #fff
+    color: #fff;
+    margin: 5%;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -12432,7 +12433,7 @@ img.mfp-img {
 }
 
 #Builder {
-    background-image: url('https://techguided.com/wp-content/uploads/2017/05/Reasons-to-Build-Your-Own-Computer.jpg');
+    background-image: url('../img/ak-mod-workstation-featured.jpg');
     opacity: 0.8;
 }
 
