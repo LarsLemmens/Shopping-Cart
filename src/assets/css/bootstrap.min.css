@@ -9490,9 +9490,14 @@ header.masthead p{
     text-align:center;
     opacity:0;
     color:#fff;
-    background:rgba(240,95,64,.9);
+    background:rgba(219,164,36,.9);
     transition:all .2s
 }
+
+.bg-primary {
+    background-color: #dba424 !important;
+  }
+
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content{
     position:absolute;
     top:50%;

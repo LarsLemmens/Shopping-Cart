@@ -58,10 +58,15 @@ console.log("Hello from Vue!");
             </div>
         </div>
     </section>
+    <section class="text-white bg-dark">
+        <div class="container text-center">
+            <h2 class="mb-4">Our catalog&nbsp;</h2><a class="btn btn-light btn-xl sr-button" role="button" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true" href="#">Download Now!</a>
+        </div>
+
     <section id="portfolio" class="p-0">
         <div class="container-fluid p-0">
             <div class="row g-0 popup-gallery">
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/desk4.png"><img class="img-fluid" src="assets/img/desk4.png">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/desk4.png"><img class="img-fluid" src="../assets/img/desk4.png">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Hanging Desk</span></div>
@@ -69,7 +74,7 @@ console.log("Hello from Vue!");
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/desk2.png"><img class="img-fluid" src="assets/img/desk2.png">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/desk2.png"><img class="img-fluid" src="../assets/img/desk2.png">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Desk type red</span></div>
@@ -77,7 +82,7 @@ console.log("Hello from Vue!");
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/desk3.png"><img class="img-fluid" src="assets/img/desk3.png">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/desk3.png"><img class="img-fluid" src="../assets/img/desk3.png">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Desk type green</span></div>
@@ -85,7 +90,7 @@ console.log("Hello from Vue!");
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/desk1.png"><img class="img-fluid" src="assets/img/desk1.png">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/desk1.png"><img class="img-fluid" src="../assets/img/desk1.png">
                         <div class="portfolio-box-caption" style="/*background-image: white;*/">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Industrial red</span></div>
@@ -93,7 +98,7 @@ console.log("Hello from Vue!");
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/desk5.png"><img class="img-fluid" src="assets/img/desk5.png">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/desk5.png"><img class="img-fluid" src="../assets/img/desk5.png">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Desk</span></div>
@@ -101,7 +106,7 @@ console.log("Hello from Vue!");
                             </div>
                         </div>
                     </a></div>
-                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="assets/img/desk6.png"><img class="img-fluid" src="assets/img/desk6.png">
+                <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="../assets/img/desk6.png"><img class="img-fluid" src="../assets/img/desk6.png">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>Calm</span></div>
@@ -111,11 +116,7 @@ console.log("Hello from Vue!");
                     </a></div>
             </div>
         </div>
-    </section>
-    <section class="text-white bg-dark">
-        <div class="container text-center">
-            <h2 class="mb-4">Our catalog&nbsp;</h2><a class="btn btn-light btn-xl sr-button" role="button" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true" href="#">Download Now!</a>
-        </div>
+            </section>
     </section>
     <section id="contact">
         <div class="container">
