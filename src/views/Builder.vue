@@ -36,7 +36,7 @@
           <div class="intro">
             <h2 class="text-center">Desks</h2>
             <p class="text-center">
-              This is an overview of all the pre-build desks.
+              Here is an overview of all the pre-build desks.
             </p>
           </div>
           <div class="row projects">
