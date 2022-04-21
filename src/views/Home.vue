@@ -5,7 +5,7 @@
     data-bs-target="#mainNav"
     data-bs-offset="57"
   >
-    <NavHeader :page="page" />
+    <NavHeader :page="page" :redirect="redirect" />
     <section id="about" class="bg-primary">
       <div class="container">
         <div class="row">
@@ -220,14 +220,9 @@
                 type="tel"
                 class="form-control"
                 id="exampleTelephoneNumber1"
-                placeholder=""
+                placeholder="Enter telephone number"
               />
             </div>
-            <div class="form-group" id="login">
-              <label for="phone">Telephone number</label><br />
-              <input id="phone" type="tel" name="phone" />
-            </div>
-
             <div
               class="g-recaptcha brochure__form__captcha"
               data-sitekey="6Lenz4YfAAAAAIAdnIjvI_kkU9O1uH3gSeYjvPSG"
@@ -272,6 +267,7 @@ export default {
   data() {
     return {
       page: "Home",
+      redirect: "",
     };
   },
 };

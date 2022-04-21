@@ -36,10 +36,10 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#about" style="color: white">About</a>
+                <a class="nav-link" :href="$attrs.redirect + '#about'" style="color: white">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#services" style="color: white"
+                <a class="nav-link" :href="$attrs.redirect + '#services'" style="color: white"
                   >Services</a
                 >
               </li>
