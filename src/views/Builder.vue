@@ -27,6 +27,60 @@
         </div>
       </div>
     </section>
+
+  <div>
+    <h1>Builder</h1>
+
+    <div class="projects-clean">
+      <div class="container">
+        <div class="intro">
+          <h2 class="text-center">Desks</h2>
+          <p class="text-center">
+            This is an overview of all the pre-build desks.
+          </p>
+        </div>
+        <div class="row projects">
+          <div class="col-sm-6 col-lg-4 item">
+            <img class="img-fluid" src="assets/img/desk.jpg" />
+            <h3 class="name">Hanging desk</h3>
+            <p class="description">A desk that has to be mounted to the wall</p>
+          </div>
+          <div class="col-sm-6 col-lg-4 item">
+            <img class="img-fluid" src="assets/img/building.jpg" />
+            <h3 class="name">Red desk</h3>
+            <p class="description">
+              A desk that has a color scheme that exists out of black and red
+            </p>
+          </div>
+          <div class="col-sm-6 col-lg-4 item">
+            <img class="img-fluid" src="assets/img/building.jpg" />
+            <h3 class="name">Green desk</h3>
+            <p class="description">
+              <br />A desk that has a color scheme that exists out of black and
+              green<br />
+            </p>
+          </div>
+          <div class="col-sm-6 col-lg-4 item">
+            <img class="img-fluid" src="assets/img/building.jpg" />
+            <h3 class="name">Zen desk</h3>
+            <p class="description">
+              <br />A desk that has almost no lights, this one is very clean and
+              steady<br /><br />
+            </p>
+          </div>
+          <div class="col-sm-6 col-lg-4 item">
+            <img class="img-fluid" src="assets/img/building.jpg" />
+            <h3 class="name">Industrial red desk</h3>
+            <p class="description">
+              <br />A desk that has a color scheme that exists out of black and
+              industrial red<br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   </body>
 </template>
 
@@ -56,4 +110,11 @@ export default {
 @import "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js";
 @import "https://www.google.com/recaptcha/api.js";
+</style>
+
+
+<style scoped>
+@import "../assets/css/bootstrap.min.builder.css";
+@import "../assets/css/Projects-Clean.css";
+@import "../assets/css/Features-Boxed.css";
 </style>
