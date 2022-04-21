@@ -12455,8 +12455,3 @@ header:not(#Home) {
     background-color: white !important;
     color: black;
 }
-
-#hoverButton :hover {
-    background-color: goldenrod !important;
-    color: white;
-}
